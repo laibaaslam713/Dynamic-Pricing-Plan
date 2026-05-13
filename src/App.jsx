@@ -63,26 +63,7 @@ const PRICING_DATA = {
       ],
       cta: "Contact Sales",
     },
-    {
-      id: 4,
-      plan_name: "Enterprise",
-      price: 199,
-      billing_cycle: "monthly",
-      popular: false,
-      color: "#f472b6",
-      description: "Tailored solutions for large organizations",
-      features: [
-        { text: "Unlimited Projects", included: true },
-        { text: "Unlimited Storage", included: true },
-        { text: "Custom Analytics", included: true },
-        { text: "Dedicated Account Manager", included: true },
-        { text: "Full API Access", included: true },
-        { text: "Custom Domain", included: true },
-        { text: "Priority Support", included: true },
-        { text: "White Labeling", included: true },
-      ],
-      cta: "Talk to Us",
-    },
+    
   ],
 };
 
