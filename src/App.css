@@ -242,3 +242,32 @@ h1 { font-size: 42px; }
 
 .card, .toggle-btn, .cta-btn { will-change: transform, opacity; }
 .toggle-btn:focus, .cta-btn:focus { outline: 3px solid rgba(167,139,250,0.18); outline-offset: 2px; border-radius: 12px; }
+
+@media (max-width: 420px) {
+.controls { flex-direction: column; gap: 12px; padding: 0 6px; }
+.currency-select { width: 100%; padding-right: 36px; }
+.badge { top: 14px; right: 14px; font-size: 10px; padding: 4px 8px; }
+.header { margin-bottom: 36px; }
+.subtitle { font-size: 14px; padding: 0 12px; }
+.blob-1, .blob-2 { display: none; }
+}
+
+@media (min-width: 421px) and (max-width: 1024px) {
+.pricing-root { padding: clamp(40px, 6vw, 72px) 20px; }
+.price-num { font-size: clamp(36px, 8vw, 56px); }
+.grid { gap: clamp(12px, 3.2vw, 28px); }
+.card { padding: clamp(24px, 3.2vw, 36px); }
+}
+
+@media (min-width: 1200px) {
+.pricing-root { padding-top: 100px; padding-bottom: 100px; }
+.grid { gap: 28px; }
+.card { min-height: 360px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+* { animation: none !important; transition: none !important; }
+}
+
+.card, .toggle-btn, .cta-btn { will-change: transform, opacity; }
+.toggle-btn:focus, .cta-btn:focus { outline: 3px solid rgba(167,139,250,0.18); outline-offset: 2px; border-radius: 12px; }
